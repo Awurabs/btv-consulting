@@ -91,21 +91,19 @@
 <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
 <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 <a class="text-xl font-bold tracking-tighter text-slate-900" href="index.html">BTV Consulting</a>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-colors" href="strategy.html">Strategy</a>
-<a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-colors" href="growth.html">Growth</a>
-<a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-colors" href="tech.html">Tech</a>
-<a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-colors" href="data.html">Data</a>
-<a class="font-inter tracking-tight font-medium text-sm text-slate-600 hover:text-slate-900 transition-colors" href="finance.html">Finance</a>
-<a class="font-inter tracking-tight font-medium text-sm text-purple-900 font-bold border-b-2 border-purple-900 pb-1" href="marketing.html">Marketing</a>
+<div class="hidden md:flex items-center gap-5 font-inter tracking-tight font-medium text-sm">
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="data.html">Data</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="finance.html">Finance</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="growth.html">Growth</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="legal.html">Legal</a>
+<a class="text-purple-900 font-bold border-b-2 border-purple-900 pb-0.5" href="marketing.html">Marketing</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="strategy.html">Strategy</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="talent.html">Talent</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="tech.html">Tech</a>
 </div>
-<div class="flex items-center space-x-4">
-<a href="contact.html" class="hidden lg:block bg-primary text-on-primary px-5 py-2 rounded-md font-medium text-sm transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
-                    Contact Us
-                </a>
-<button class="md:hidden text-slate-900">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">Contact Us</a>
+<button class="md:hidden text-slate-900"><span class="material-symbols-outlined">menu</span></button>
 </div>
 </div>
 </nav>
@@ -330,30 +328,27 @@
 <p class="text-center text-slate-500">© 2024 BTV Consulting. All rights reserved.</p>
 </div>
 </footer>
+
 <script>
-// Mobile menu toggle
-const menuBtn = document.querySelector('button.md\\:hidden, button[class*="md:hidden"]');
-const mobileNav = document.createElement('div');
-mobileNav.id = 'mobile-menu';
-mobileNav.className = 'fixed top-[72px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
-mobileNav.innerHTML = `
-  <div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">
-    <a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>
-    <a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>
-    <a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>
-    <a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>
-    <a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>
-    <a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>
-    <a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>
-    <a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>
-    <a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>
-  </div>
-`;
-document.body.appendChild(mobileNav);
-if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    mobileNav.classList.toggle('hidden');
-  });
-}
+// Mobile menu
+(function(){
+  var btn = document.querySelector('nav button.md\\:hidden');
+  var menu = document.createElement('div');
+  menu.id = 'mobile-menu';
+  menu.className = 'fixed top-[73px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
+  menu.innerHTML = '<div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">'
+    + '<a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>'
+    + '<a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>'
+    + '<a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>'
+    + '<a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>'
+    + '<a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>'
+    + '<a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>'
+    + '<a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>'
+    + '<a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>'
+    + '<a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>'
+    + '</div>';
+  document.body.appendChild(menu);
+  if (btn) btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+})();
 </script>
 </body></html>

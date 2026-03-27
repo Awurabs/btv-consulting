@@ -302,30 +302,27 @@
             © 2024 BTV Consulting. All rights reserved.
         </div>
 </footer>
+
 <script>
-// Mobile menu toggle
-const menuBtn = document.querySelector('button.md\\:hidden, button[class*="md:hidden"]');
-const mobileNav = document.createElement('div');
-mobileNav.id = 'mobile-menu';
-mobileNav.className = 'fixed top-[72px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
-mobileNav.innerHTML = `
-  <div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">
-    <a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>
-    <a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>
-    <a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>
-    <a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>
-    <a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>
-    <a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>
-    <a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>
-    <a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>
-    <a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>
-  </div>
-`;
-document.body.appendChild(mobileNav);
-if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    mobileNav.classList.toggle('hidden');
-  });
-}
+// Mobile menu
+(function(){
+  var btn = document.querySelector('nav button.md\\:hidden');
+  var menu = document.createElement('div');
+  menu.id = 'mobile-menu';
+  menu.className = 'fixed top-[73px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
+  menu.innerHTML = '<div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">'
+    + '<a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>'
+    + '<a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>'
+    + '<a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>'
+    + '<a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>'
+    + '<a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>'
+    + '<a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>'
+    + '<a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>'
+    + '<a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>'
+    + '<a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>'
+    + '</div>';
+  document.body.appendChild(menu);
+  if (btn) btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+})();
 </script>
 </body></html>
