@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#f8f9fa",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "on-primary-fixed": "#2e004d",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e1e3e4",
+              "primary": "#320052",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#e2b6ff",
+              "on-background": "#191c1d",
+              "on-tertiary-container": "#c1925d",
+              "on-primary-container": "#c081ed",
+              "secondary-container": "#d5e3fc",
+              "surface-tint": "#7e42aa",
+              "error": "#ba1a1a",
+              "inverse-primary": "#e2b6ff",
+              "secondary": "#515f74",
+              "primary-fixed": "#f3daff",
+              "on-surface-variant": "#4c4451",
+              "outline-variant": "#cfc2d2",
+              "primary-container": "#4f0a7b",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-container-highest": "#e1e3e4",
+              "secondary-fixed": "#d5e3fc",
+              "surface-container": "#edeeef",
+              "tertiary-fixed-dim": "#f0bd84",
+              "on-surface": "#191c1d",
+              "tertiary": "#2e1900",
+              "outline": "#7e7482",
+              "surface": "#f8f9fa",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-secondary-container": "#57657a",
+              "tertiary-container": "#4b2c00",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#623f11",
+              "tertiary-fixed": "#ffddb9",
+              "inverse-surface": "#2e3132",
+              "surface-container-low": "#f3f4f5",
+              "surface-dim": "#d9dadb",
+              "on-primary-fixed-variant": "#652790",
+              "on-secondary-fixed-variant": "#3a485b",
+              "on-tertiary-fixed": "#2b1700"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #320052 0%, #4f0a7b 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl shadow-sm dark:shadow-none transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50" href="index.html">BTV Consulting</a>
+<div class="hidden md:flex space-x-8 items-center font-inter tracking-tight font-medium text-sm">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="strategy.html">Strategy</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="growth.html">Growth</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="tech.html">Tech</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="data.html">Data</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="finance.html">Finance</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="marketing.html">Marketing</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="hero-gradient text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300 ease-in-out hover:scale-[1.02] active:scale-[0.98]">
+                    Contact Us
+                </a>
+<button class="md:hidden text-slate-900">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden px-6 lg:px-12">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover filter grayscale opacity-40" data-alt="Monochromatic high-angle view of a futuristic glass skyscraper cityscape with clean lines and sharp architectural precision in cool morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1j7SaW-h1BvhBYOcHRIj44fLqvs_iedtltq7K-zIfYg4_BzJYofpGK_Myn1_mDpSg9NF7DzJpK-KyJcCYqMUa1fHj7DjofWWB1rqJ6eyEyKWvoBdF_HUcf2b5_Ik5mlNHtWBx7TAy17uEi8cIrZwP7qrw_ddoNVhoRYZZX-R-qLjiBAGbwsFQvwoJ9bex9_4Qyo1hw8GG_FIkKF6hKX-z-Vzn5WhV_zKrAG484jsC4SbQfScpeP8pLHC9pDMpW-gX2xY0Yv0Tz4w"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="label-md font-bold tracking-widest text-primary uppercase block mb-6">Structural Excellence</span>
+<h1 class="text-5xl lg:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-8">
+                        The Digital <br/><span class="text-primary-container">Architect.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                        We don't just consult; we build. Curating structural digital experiences through intentional strategy, precision engineering, and authoritative market foresight.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="hero-gradient text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform">
+                            View Methodology
+                        </button>
+<button class="bg-surface-container-lowest text-primary border border-outline-variant/30 px-8 py-4 rounded-xl font-bold hover:bg-surface-container transition-colors">
+                            Our Portfolio
+                        </button>
+</div>
+</div>
+<div class="hidden lg:block lg:col-span-5">
+<div class="glass-panel bg-white/40 border border-white/40 p-8 rounded-3xl shadow-2xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+<h3 class="text-2xl font-bold tracking-tight mb-4">Precision Framework</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="text-sm font-medium">Scalable Foundation Layer</span>
+</div>
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="text-sm font-medium">Data-Driven Logic Engine</span>
+</div>
+<div class="flex items-center gap-4 bg-white/60 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">speed</span>
+<span class="text-sm font-medium">Growth Velocity Optimization</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Section -->
+<section class="py-32 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-4xl font-black tracking-tighter mb-4">Core Competencies</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Our multidisciplinary approach ensures every pillar of your enterprise is architected for peak performance.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1">
+<!-- Service 1: Strategy -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="rocket_launch">rocket_launch</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Strategy</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">High-level architectural planning for market dominance and long-term sustainability.</p>
+</div>
+<!-- Service 2: Growth -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="trending_up">trending_up</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Growth</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Aggressive scaling strategies backed by structural analysis and market data.</p>
+</div>
+<!-- Service 3: Tech -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="terminal">terminal</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Tech</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Custom technology stacks built for resilience, speed, and seamless integration.</p>
+</div>
+<!-- Service 4: Data -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="database">database</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Data</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Turning raw information into structured capital for intelligent decision making.</p>
+</div>
+<!-- Service 5: Finance -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="payments">payments</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Finance</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Capital structure and financial engineering for sustainable business growth.</p>
+</div>
+<!-- Service 6: Marketing -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="campaign">campaign</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Marketing</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Precise brand positioning and multi-channel campaign architecture.</p>
+</div>
+<!-- Service 7: Legal -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="gavel">gavel</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Legal</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Navigating complexity through robust compliance and legal structure.</p>
+</div>
+<!-- Service 8: Talent -->
+<div class="bg-surface-container-lowest p-10 hover:bg-primary group transition-all duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 group-hover:text-white transition-colors" data-icon="groups">groups</span>
+<h4 class="text-xl font-bold mb-3 group-hover:text-white transition-colors">Talent</h4>
+<p class="text-on-surface-variant group-hover:text-white/80 transition-colors text-sm leading-relaxed">Building high-performance teams to execute architectural vision.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ecosystem Section -->
+<section class="py-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<img class="rounded-3xl shadow-2xl relative z-10" data-alt="Interior of a modern high-end minimalist corporate office with floor-to-ceiling windows and sculptural furniture pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCZ-m-zEDcevsXUpgWMUllyy4HILQShn7APINbpL-chgq5aXd92fQuDNN3GB0uaJNAGWBlWZLSOCPhksoLtc27SlvOJ_Xsns4hoMa8OQ1zUyzh8pPPuhF1M_fCSqfS_ZVwisHNwIKYSixSfxBdUM9eswJIr2BVM5Pz_2lAz7DdxtNVNKQSE8Si6_IjFxye97Yij0pcQ442vSEJx12bsYouI5B3razQbH0Rp1FFdoXIprLrB4lTV2CVWFR0OfneWiDGCTls1DlWS2E"/>
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-black tracking-tight mb-6">Powered by Bethniel Technology Ventures</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8 text-lg">
+                        BTV Consulting is the professional services arm of the BTV ecosystem. We leverage the infrastructure, resources, and innovation pipeline of Bethniel Technology Ventures to deliver unmatched value to our clients.
+                    </p>
+<a class="inline-flex items-center text-primary font-bold group" href="index.html">
+                        Explore the Ecosystem
+                        <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Modern CTA -->
+<section class="py-24 px-6">
+<div class="max-w-5xl mx-auto hero-gradient rounded-3xl p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-black text-white tracking-tighter mb-8 leading-tight">Ready to Architect <br/>Your Growth?</h2>
+<p class="text-primary-fixed max-w-xl mx-auto mb-12 text-lg opacity-90">Join the elite organizations that choose precision over chance. Let's build your digital future today.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-xl font-black text-lg shadow-xl hover:scale-105 active:scale-95 transition-all">
+                        Initiate Consultation
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 font-inter text-sm leading-relaxed">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2 lg:col-span-1">
+<div class="text-lg font-black tracking-tighter text-slate-900 dark:text-slate-50 mb-4">BTV Consulting</div>
+<p class="text-slate-500 mb-6">Building the structures of tomorrow's digital economy.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Services</h5>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="strategy.html">Strategy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="growth.html">Growth</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="tech.html">Tech</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="data.html">Data</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Capabilities</h5>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="finance.html">Finance</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="marketing.html">Marketing</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="legal.html">Legal</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="talent.html">Talent</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Company</h5>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="index.html">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="index.html">Ecosystem</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="contact.html">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-slate-900 dark:text-slate-100 mb-2">Legal</h5>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500">© 2024 BTV Consulting. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">shield</span>
+</div>
+</div>
+</footer>
+<script>
+// Mobile menu toggle
+const menuBtn = document.querySelector('button.md\\:hidden, button[class*="md:hidden"]');
+const mobileNav = document.createElement('div');
+mobileNav.id = 'mobile-menu';
+mobileNav.className = 'fixed top-[72px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
+mobileNav.innerHTML = `
+  <div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">
+    <a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>
+    <a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>
+    <a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>
+    <a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>
+    <a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>
+    <a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>
+    <a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>
+    <a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>
+    <a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>
+  </div>
+`;
+document.body.appendChild(mobileNav);
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+  });
+}
+</script>
+</body></html>

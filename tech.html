@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#f8f9fa",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "on-primary-fixed": "#2e004d",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e1e3e4",
+              "primary": "#320052",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#e2b6ff",
+              "on-background": "#191c1d",
+              "on-tertiary-container": "#c1925d",
+              "on-primary-container": "#c081ed",
+              "secondary-container": "#d5e3fc",
+              "surface-tint": "#7e42aa",
+              "error": "#ba1a1a",
+              "inverse-primary": "#e2b6ff",
+              "secondary": "#515f74",
+              "primary-fixed": "#f3daff",
+              "on-surface-variant": "#4c4451",
+              "outline-variant": "#cfc2d2",
+              "primary-container": "#4f0a7b",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-container-highest": "#e1e3e4",
+              "secondary-fixed": "#d5e3fc",
+              "surface-container": "#edeeef",
+              "tertiary-fixed-dim": "#f0bd84",
+              "on-surface": "#191c1d",
+              "tertiary": "#2e1900",
+              "outline": "#7e7482",
+              "surface": "#f8f9fa",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-secondary-container": "#57657a",
+              "tertiary-container": "#4b2c00",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#623f11",
+              "tertiary-fixed": "#ffddb9",
+              "inverse-surface": "#2e3132",
+              "surface-container-low": "#f3f4f5",
+              "surface-dim": "#d9dadb",
+              "on-primary-fixed-variant": "#652790",
+              "on-secondary-fixed-variant": "#3a485b",
+              "on-tertiary-fixed": "#2b1700"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .text-shadow-architect {
+            text-shadow: 0 4px 12px rgba(50, 0, 82, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-bold tracking-tighter text-slate-900" href="index.html">BTV Consulting</a>
+<div class="hidden md:flex items-center gap-8 font-inter tracking-tight font-medium text-sm">
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="strategy.html">Strategy</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="growth.html">Growth</a>
+<a class="text-purple-900 font-bold border-b-2 border-purple-900 pb-1" href="tech.html">Tech</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="data.html">Data</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="finance.html">Finance</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="marketing.html">Marketing</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out hover:scale-[1.02]">
+                    Contact Us
+                </a>
+<button class="md:hidden text-on-surface"><span class="material-symbols-outlined" data-icon="menu">menu</span></button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Technology Development" class="w-full h-full object-cover" data-alt="Close-up of a high-tech circuit board with glowing blue pathways and intricate microchips in a dark, professional tech environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVPeEl7vONoJppDL7bj047B518FK2cl2ZgyyfiL7QU6NBCARnr7Un78hWfdZ1O3rPcIi5Af_QOh9KP35VpWBKKQqMzEmxweJ-rCC0LG41lkbipT7R5fYFP6FqVSXSx_yryG-vaNHGqsCUHdkCGLc7_zdNPc36w9zXTsxGVSHcUcyvwnKAqNac7llsEVOkxMPZm68FrTrJyriOeG7iu00zyH6EDNCqiS_Bdy2kHZZ80jylHtjfXJFoQ0OSpI9mRRtJW0tPLkAbE9O4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12">
+<div class="glass-panel p-10 rounded-xl border border-white/20 shadow-2xl">
+<span class="text-primary-fixed-dim font-bold tracking-[0.2em] text-xs uppercase mb-4 block">Core Competency</span>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter text-slate-900 mb-6 leading-[1.1]">
+                        Technology Development
+                    </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-md">
+                        Engineering scalable digital architectures that serve as the backbone for global enterprises. We translate complex business requirements into elegant technical realities.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-sm tracking-tight hover:bg-primary-container transition-all">
+                            View Roadmap
+                        </button>
+<button class="border border-outline-variant text-primary px-8 py-4 rounded-md font-bold text-sm tracking-tight hover:bg-surface-container transition-all">
+                            Technical Stack
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Capabilities: Cutting-edge Technical Solutions -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-extrabold tracking-tighter text-on-surface mb-4">Cutting-edge Technical Solutions</h2>
+<p class="text-on-surface-variant text-lg">Our multi-disciplinary approach ensures every layer of your technology stack is optimized for performance, security, and future-proofed scalability.</p>
+</div>
+<div class="hidden md:block">
+<span class="text-primary font-black text-8xl opacity-10 tracking-tighter select-none">SYSTEMS</span>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Tech Item 1 -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm group hover:bg-primary transition-colors duration-500">
+<div class="flex flex-col h-full justify-between">
+<div>
+<span class="material-symbols-outlined text-primary group-hover:text-primary-fixed text-4xl mb-6" data-icon="cloud_done">cloud_done</span>
+<h3 class="text-2xl font-bold tracking-tight mb-4 group-hover:text-white">Cloud Infrastructure Design</h3>
+<p class="text-on-surface-variant group-hover:text-primary-fixed/80 max-w-lg">Architecting distributed systems across AWS, Azure, and GCP with a focus on high availability and automated recovery protocols.</p>
+</div>
+<div class="mt-12 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-bold text-secondary group-hover:bg-primary-container group-hover:text-on-primary">KUBERNETES</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-bold text-secondary group-hover:bg-primary-container group-hover:text-on-primary">TERRAFORM</span>
+</div>
+</div>
+</div>
+<!-- Tech Item 2 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-transparent hover:border-primary-fixed-dim transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="security">security</span>
+<h3 class="text-2xl font-bold tracking-tight mb-4">Cybersecurity Audits</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">End-to-end vulnerability assessments and implementation of Zero Trust security frameworks for sensitive data protection.</p>
+</div>
+<!-- Tech Item 3 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-transparent hover:border-primary-fixed-dim transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="memory">memory</span>
+<h3 class="text-2xl font-bold tracking-tight mb-4">Embedded Systems</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Specialized hardware-level software development for IoT devices and industrial automation controllers.</p>
+</div>
+<!-- Tech Item 4 -->
+<div class="md:col-span-8 bg-surface-container-high p-8 rounded-xl shadow-sm relative overflow-hidden flex items-center">
+<div class="relative z-10">
+<h3 class="text-2xl font-bold tracking-tight mb-4">Full-Stack Development</h3>
+<p class="text-on-surface-variant max-w-md">Developing responsive, high-performance web and mobile applications using modern frameworks like React, Next.js, and Swift.</p>
+<a class="mt-6 inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest hover:gap-4 transition-all" href="#">
+                                Explore Frameworks <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<img alt="Code on screen" class="absolute right-[-10%] top-0 h-full w-1/2 object-cover opacity-20 grayscale" data-alt="Minimalist macro shot of high-quality clean code on a monitor with soft blue and purple atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHEP17DPzgLi2MAr6lw4KjONNs7G3UenIYjWIcJ8gp_siwnHytBn8U64r1hEm5OT7kVsSV7SOF2kFEf-MX3NvU2871QhrQebGTXLt121sEKiHIQaYvyAVOwtUkPLSmUW0asxcHiiwwRuIFsLvlDGf3yCZ82Pu2FfGUkNijF8AlSCJIK4HmXbaGUv9rguvTUhqUWxIPtrep1MBzgRA1ibdWQHMOv42rJ--FvB96MOuOme9A5CaIRGM4Xg9H-6YSxnWI2BqvOjHMjq0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Uncompromising Structural Integrity -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<img alt="Structural Integrity" class="w-full h-full object-cover" data-alt="Low angle view of a modern skyscraper with sharp geometric glass facets reflecting a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfkEOMRZ2OqL-8JJtTwUNZtQ3Zy-yqCjY6Zc9R66_tliMhz-Cu0EUtjYAF76WQb4nm5QzSHn0_Fb6RzvR4RQCsgzMjHvwlJ1MiT8G9k8334Chlhv251x1VGHwIFgmJagjuGhmD2PBL1_OAdlfHAK79lSjIQCP6XJw7d89L9eJ1cmL_wkhf71tmEuMrcKYoTdxurcEzZUzyXkXcWxsmsjygqzd9ArYvNS94ap3MmI4k9QulBTsguEpHt4kHcMBNxOPMEakhglZ2D98"/>
+</div>
+<!-- Decorative architectural element -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary rounded-xl -z-10 opacity-5"></div>
+<div class="absolute top-10 -left-10 glass-panel p-6 rounded-xl shadow-xl border border-white/40 max-w-[240px]">
+<p class="text-xs font-black tracking-widest text-primary mb-2 uppercase">Integrity Score</p>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-3xl font-bold text-on-surface">99.9%</span>
+<span class="text-error text-xs font-bold font-mono">UPTIME</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[99.9%]"></div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-on-surface mb-8">Uncompromising Structural Integrity</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="architecture">architecture</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Architectural Rigor</h4>
+<p class="text-on-surface-variant leading-relaxed">We don't just write code; we build structures. Every project undergoes rigorous peer review and architectural validation against international standards.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Automated Governance</h4>
+<p class="text-on-surface-variant leading-relaxed">Integrated CI/CD pipelines ensure that every commit meets your defined security and performance benchmarks before reaching production.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Redundancy by Design</h4>
+<p class="text-on-surface-variant leading-relaxed">Eliminating single points of failure through multi-region deployment strategies and fail-safe logic at the application layer.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modern CTA -->
+<section class="py-24 px-6 bg-primary text-on-primary text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter mb-8">Ready to Architect Your Future?</h2>
+<p class="text-primary-fixed-dim text-lg mb-12 opacity-80">Partner with BTV Consulting to build the technical foundation your business deserves. Precise. Scalable. Uncompromising.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-md font-black text-sm uppercase tracking-widest hover:bg-slate-100 transition-colors shadow-xl">
+                    Request technical audit
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 border-t border-slate-200 bg-slate-50">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2 lg:col-span-1">
+<div class="text-lg font-black tracking-tighter text-slate-900 mb-6">BTV Consulting</div>
+<p class="text-slate-500 font-inter text-sm leading-relaxed max-w-[200px]">Precise structural experiences for the digital age.</p>
+</div>
+<div class="flex flex-col gap-3 font-inter text-sm">
+<span class="font-bold text-slate-900 mb-2">Services</span>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="strategy.html">Strategy</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="growth.html">Growth</a>
+<a class="text-purple-700 font-semibold underline decoration-purple-500/30 underline-offset-4" href="tech.html">Tech</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="data.html">Data</a>
+</div>
+<div class="flex flex-col gap-3 font-inter text-sm">
+<span class="font-bold text-slate-900 mb-2">Company</span>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="finance.html">Finance</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="marketing.html">Marketing</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="talent.html">Talent</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="legal.html">Legal</a>
+</div>
+<div class="flex flex-col gap-3 font-inter text-sm">
+<span class="font-bold text-slate-900 mb-2">Contact</span>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="#">HQ - New York</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="#">London Office</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="#">Singapore</a>
+</div>
+<div class="flex flex-col gap-3 font-inter text-sm">
+<span class="font-bold text-slate-900 mb-2">Legal</span>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-purple-600 transition-opacity" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200">
+<p class="text-slate-400 font-inter text-xs text-center md:text-left">© 2024 BTV Consulting. All rights reserved.</p>
+</div>
+</footer>
+<script>
+// Mobile menu toggle
+const menuBtn = document.querySelector('button.md\\:hidden, button[class*="md:hidden"]');
+const mobileNav = document.createElement('div');
+mobileNav.id = 'mobile-menu';
+mobileNav.className = 'fixed top-[72px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
+mobileNav.innerHTML = `
+  <div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">
+    <a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>
+    <a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>
+    <a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>
+    <a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>
+    <a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>
+    <a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>
+    <a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>
+    <a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>
+    <a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>
+  </div>
+`;
+document.body.appendChild(mobileNav);
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+  });
+}
+</script>
+</body></html>

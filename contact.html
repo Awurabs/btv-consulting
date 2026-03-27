@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | BTV Consulting</title>
+<!-- Google Fonts: Inter & Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#623f11",
+              "primary-fixed": "#f3daff",
+              "outline-variant": "#cfc2d2",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-primary-fixed-variant": "#652790",
+              "tertiary": "#2e1900",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-surface": "#191c1d",
+              "surface-container-highest": "#e1e3e4",
+              "surface-container-high": "#e7e8e9",
+              "primary-container": "#4f0a7b",
+              "on-primary-container": "#c081ed",
+              "surface-tint": "#7e42aa",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#4c4451",
+              "primary": "#320052",
+              "tertiary-fixed": "#ffddb9",
+              "inverse-surface": "#2e3132",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#f0f1f2",
+              "secondary": "#515f74",
+              "error": "#ba1a1a",
+              "surface-bright": "#f8f9fa",
+              "secondary-container": "#d5e3fc",
+              "surface-container-low": "#f3f4f5",
+              "on-secondary-fixed-variant": "#3a485b",
+              "primary-fixed-dim": "#e2b6ff",
+              "on-tertiary-fixed": "#2b1700",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#4b2c00",
+              "secondary-fixed": "#d5e3fc",
+              "inverse-primary": "#e2b6ff",
+              "tertiary-fixed-dim": "#f0bd84",
+              "surface-variant": "#e1e3e4",
+              "surface-dim": "#d9dadb",
+              "on-secondary-container": "#57657a",
+              "outline": "#7e7482",
+              "on-primary-fixed": "#2e004d",
+              "background": "#f8f9fa",
+              "surface": "#f8f9fa",
+              "surface-container": "#edeeef",
+              "error-container": "#ffdad6",
+              "on-tertiary-container": "#c1925d",
+              "on-background": "#191c1d",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #320052 0%, #4f0a7b 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_20px_50px_rgba(79,10,123,0.05)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<a href="index.html" class="text-xl font-bold tracking-tighter text-purple-950 dark:text-white uppercase font-headline">
+                BTV Consulting
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors font-['Inter'] tracking-tight text-sm font-medium uppercase" href="strategy.html">Strategy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors font-['Inter'] tracking-tight text-sm font-medium uppercase" href="growth.html">Growth</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors font-['Inter'] tracking-tight text-sm font-medium uppercase" href="tech.html">Tech</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors font-['Inter'] tracking-tight text-sm font-medium uppercase" href="data.html">Data</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors font-['Inter'] tracking-tight text-sm font-medium uppercase" href="finance.html">Finance</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors font-['Inter'] tracking-tight text-sm font-medium uppercase" href="marketing.html">Marketing</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-headline font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform hidden md:block">
+                Contact Us
+            </a>
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<img alt="Architectural perspective" class="absolute inset-0 w-full h-full object-cover grayscale opacity-40" data-alt="monochrome low angle shot of a sleek modern skyscraper facade with geometric patterns reflecting clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfr3iCOmGX0K9bUmGTFm3kzmpjIG-XZSKgBifYkgDco4txcwCC84KHN7dlveFpIzGnYrvmJ6PsZmoJAxojxeuIvQg2XqHaKxdMsDoiCtdpS-0ua9N_WxvZ_gVZGOwtXPd4BEKgEKW6-6QQuqlPSX3x97IYDSVwEOCyxm9kLoL84NnesdIX60PBZoIwsp74LK8M3CKefmHbv0Wor6In3mubxmlI2BucOzsVtnm2OMFziT1Le3BwbdJQ_NaIr6_GCYyRB2SE7tDPcCU"/>
+<div class="relative z-10 container mx-auto px-6 text-center">
+<div class="glass-card inline-block px-12 py-16 rounded-xl border border-white/20 shadow-2xl">
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tighter mb-6">
+                        Let's Architect Your Future
+                    </h1>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl font-light tracking-tight">
+                        Connecting global visionaries with structural precision. Our partners across London, New York, and Singapore are ready to design your next breakthrough.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="container mx-auto px-6 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Contact Form Section -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-10 md:p-16 rounded-full shadow-sm">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-4 tracking-tight">Inquiry Portal</h2>
+<p class="text-on-surface-variant mb-12 font-medium tracking-tight">Provide your organizational details and our strategy architects will respond within 24 hours.</p>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 text-on-surface placeholder:text-outline" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Corporate Email</label>
+<input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 text-on-surface placeholder:text-outline" placeholder="j.doe@company.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Organization</label>
+<input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 text-on-surface placeholder:text-outline" placeholder="Global Tech Corp" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Service Line</label>
+<select class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 text-on-surface">
+<option>Digital Strategy</option>
+<option>Infrastructure Growth</option>
+<option>Data Architecture</option>
+<option>Financial Modeling</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Project Scope</label>
+<textarea class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-0 text-on-surface placeholder:text-outline resize-none" placeholder="Briefly describe your requirements..." rows="4"></textarea>
+</div>
+<button class="primary-gradient text-on-primary w-full md:w-auto px-12 py-4 rounded-lg font-headline font-bold uppercase tracking-widest hover:shadow-xl transition-all duration-300" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+<!-- Contact Details Sidebar -->
+<div class="lg:col-span-5 space-y-12">
+<!-- Global Offices -->
+<div class="space-y-8">
+<h3 class="text-2xl font-headline font-bold text-primary tracking-tight">Global Nodes</h3>
+<!-- London -->
+<div class="group flex gap-6 items-start p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="bg-secondary-container p-3 rounded-xl text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">London Hub</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">22 Bishopsgate, London EC2N 4BQ<br/>United Kingdom</p>
+<a class="text-xs text-primary font-bold mt-2 inline-block border-b border-primary/20 hover:border-primary" href="#">View Map</a>
+</div>
+</div>
+<!-- New York -->
+<div class="group flex gap-6 items-start p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="bg-secondary-container p-3 rounded-xl text-primary">
+<span class="material-symbols-outlined" data-icon="location_city">location_city</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">New York Plaza</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">1 World Trade Center, New York, NY 10007<br/>United States</p>
+<a class="text-xs text-primary font-bold mt-2 inline-block border-b border-primary/20 hover:border-primary" href="#">View Map</a>
+</div>
+</div>
+<!-- Singapore -->
+<div class="group flex gap-6 items-start p-6 rounded-xl hover:bg-surface-container transition-colors">
+<div class="bg-secondary-container p-3 rounded-xl text-primary">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Singapore Gate</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">8 Marina View, Asia Square Tower 1<br/>Singapore 018960</p>
+<a class="text-xs text-primary font-bold mt-2 inline-block border-b border-primary/20 hover:border-primary" href="#">View Map</a>
+</div>
+</div>
+</div>
+<!-- Specialized Channels -->
+<div class="bg-surface-container-low p-8 rounded-full">
+<h3 class="text-xl font-headline font-bold text-on-surface mb-6 tracking-tight">Direct Channels</h3>
+<div class="space-y-6">
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1">General Inquiries</p>
+<p class="font-headline font-medium text-primary">hello@btv-consulting.com</p>
+</div>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1">Career Opportunities</p>
+<p class="font-headline font-medium text-primary">talent@btv-consulting.com</p>
+</div>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1">Media &amp; Press</p>
+<p class="font-headline font-medium text-primary">press@btv-consulting.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Grid / Visual Proof -->
+<section class="container mx-auto px-6 pb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="h-64 rounded-xl overflow-hidden bg-surface-container-high group">
+<img alt="Modern office lobby" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale brightness-75" data-alt="expansive minimalist modern office lobby with polished concrete floors and large glass windows at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArghXiNfcUU-U4gakS8TFRkXiHDGqO_YXqsHRi-9NMG9YAlFAD17Epd4-zvYNX-_HaazpdxhaWK8y-qt7W6dP-C3gnsn6p9g3DK4TcEQK-Ct6ruc_uyGeyPde5UFRGSUcyjOHzewrLpW3lJvFZNxedf51LUfr8sEGBiFWTF0j0UuOTzmFr1gTl9xjtNoRjUfb59OiqBDiO497Ee_LH9j2X7Z84X_vZQiMFFcEtIjg7DTLSGIzRmI9QcPkhHlzRAMF9Iwv0630Ed1Y"/>
+</div>
+<div class="h-64 rounded-xl overflow-hidden bg-surface-container-high group">
+<img alt="Technical blueprint" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale brightness-75" data-alt="top view of architectural technical blueprints laid out on a dark table with professional drafting tools and a focused light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhJVil5wLjEpWSJs1t-0WlQ7tMf_b9Qo3Il6VstdScFV_9nFqW2aLuv-_Vo2z0O5rHT--DpIEt2bmRsjTeAgoxPXG4Pi8tyaZYyaYTJMvxJT6QBQzsGchbIpk0QEx2qX8e3LZ_nF_VzmiMaYxLsY9DiAui4z_rqYRQ6Fisgg1ujnzQ5mf1w_AiPNjHq7ssOhUulzQQMSbTEPlylxJQ2Q7koNUVtr1x7o9A5pMI6449HBYnapzOOjKQhUkuF8T-PmIqSm5Vsa-wCps"/>
+</div>
+<div class="h-64 rounded-xl overflow-hidden bg-surface-container-high group">
+<img alt="Urban skyline" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale brightness-75" data-alt="dense high-altitude view of a modern metropolitan skyline featuring geometric glass buildings under a moody overcast sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdS6rMo39z61SBlW1icSrnRz63hfoq6GjEcbHkibQ9OM0J-QftZ4W6wkb7AEoy5n06rw9L4RSen2Ea-N3uWscahzcGlshCQuMWWHhMEufRmwI9K_M2yS0faYqTsc5rFJO9cms8tMIIcEUyU3KFc-hXPNO-x3BwA2C6aaANNIGRkOc4nXukOFF_29CDSylcGOmC0W-pyx22SiMH3YjEfQhuNvhyuvY2h0jXFXKDsb4iE8w0NCv_CQqQd2HaVcE6QiG3HvrdG-GEtoIw"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 font-inter text-sm leading-relaxed">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-2 lg:col-span-1">
+<a href="index.html" class="text-lg font-black tracking-tighter text-slate-900 dark:text-slate-50 mb-6 block">BTV Consulting</a>
+<p class="text-slate-500 mb-6">Architecting the digital future of enterprise excellence.</p>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-4">Core Focus</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="strategy.html">Strategy</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="growth.html">Growth</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="tech.html">Tech</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-4">Operations</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="data.html">Data</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="finance.html">Finance</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="marketing.html">Marketing</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-4">Organization</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="talent.html">Talent</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="legal.html">Legal</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-4">Connect</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="contact.html">Contact</a></li>
+<li><a class="text-slate-500 hover:text-purple-600 underline decoration-purple-500/30 underline-offset-4" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 text-slate-400 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
+<p>© 2024 BTV Consulting. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Settings</a>
+</div>
+</div>
+</footer>
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.querySelector('button.md\\:hidden, button[class*="md:hidden"]');
+  const mobileNav = document.createElement('div');
+  mobileNav.id = 'mobile-menu';
+  mobileNav.className = 'fixed top-[72px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
+  mobileNav.innerHTML = `
+    <div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">
+      <a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>
+      <a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>
+      <a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>
+      <a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>
+      <a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>
+      <a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>
+      <a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>
+      <a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>
+      <a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>
+    </div>
+  `;
+  document.body.appendChild(mobileNav);
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+  }
+</script>
+</body></html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Legal Services | BTV Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#f8f9fa",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "on-primary-fixed": "#2e004d",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e1e3e4",
+              "primary": "#320052",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#e2b6ff",
+              "on-background": "#191c1d",
+              "on-tertiary-container": "#c1925d",
+              "on-primary-container": "#c081ed",
+              "secondary-container": "#d5e3fc",
+              "surface-tint": "#7e42aa",
+              "error": "#ba1a1a",
+              "inverse-primary": "#e2b6ff",
+              "secondary": "#515f74",
+              "primary-fixed": "#f3daff",
+              "on-surface-variant": "#4c4451",
+              "outline-variant": "#cfc2d2",
+              "primary-container": "#4f0a7b",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-container-highest": "#e1e3e4",
+              "secondary-fixed": "#d5e3fc",
+              "surface-container": "#edeeef",
+              "tertiary-fixed-dim": "#f0bd84",
+              "on-surface": "#191c1d",
+              "tertiary": "#2e1900",
+              "outline": "#7e7482",
+              "surface": "#f8f9fa",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-secondary-container": "#57657a",
+              "tertiary-container": "#4b2c00",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#623f11",
+              "tertiary-fixed": "#ffddb9",
+              "inverse-surface": "#2e3132",
+              "surface-container-low": "#f3f4f5",
+              "surface-dim": "#d9dadb",
+              "on-primary-fixed-variant": "#652790",
+              "on-secondary-fixed-variant": "#3a485b",
+              "on-tertiary-fixed": "#2b1700"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-text-shadow {
+            text-shadow: 0 2px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50" href="index.html">BTV Consulting</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-inter tracking-tight font-medium text-sm" href="strategy.html">Strategy</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-inter tracking-tight font-medium text-sm" href="growth.html">Growth</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-inter tracking-tight font-medium text-sm" href="tech.html">Tech</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-inter tracking-tight font-medium text-sm" href="data.html">Data</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-inter tracking-tight font-medium text-sm" href="finance.html">Finance</a>
+<a class="text-purple-900 dark:text-purple-400 font-bold border-b-2 border-purple-900 dark:border-purple-400 pb-1 font-inter tracking-tight text-sm" href="legal.html">Legal</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-inter tracking-tight font-medium text-sm" href="marketing.html">Marketing</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-on-primary font-medium text-sm rounded-md transition-all duration-300 ease-in-out hover:scale-[1.02] shadow-lg shadow-primary/10">
+                    Contact Us
+                </a>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] min-h-[600px] overflow-hidden bg-surface-container">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-40" data-alt="Ultra-modern architectural law office with high ceilings, glass walls, and minimalist grey marble textures in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbrAcOqajEb65kCj_Lglwc1th38DX-2dTIz1gkVFJiGBziuQm6BKPs7vY0IX5xBXCw8pVK9rxHhFNCn9Oc8QVkKzMeO3dsQ7Z_uUcDTYhqX50PcZKnik3-6TMoNV11eqQbYnoazYs2EuQ-7veU8G_g5UmcysgEszV1-ptnEEnTkGxcE4Gaot9m7TArhYGQo3EjuBPPb4hLuip7YAHrSq1Fb3gjsq_hdbeuYshZheiD3ZMaeDC3pICWkW_R20m27LpLy-XaYiAceo8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold tracking-widest uppercase mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">gavel</span>
+                        Executive Legal Counsel
+                    </div>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] text-on-surface mb-8 hero-text-shadow">
+                        Legal <br/>
+<span class="text-primary">Compliance</span> &amp; <br/>
+                        Advisory.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-lg mb-10 font-light">
+                        Architecting robust legal frameworks for the digital age. We provide the structural integrity your global operations demand.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary font-bold rounded-md hover:bg-primary-container transition-all flex items-center gap-2">
+                            Explore Practices
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="px-8 py-4 bg-transparent border border-outline-variant text-primary font-bold rounded-md hover:bg-surface-container-low transition-all">
+                            Our Global Reach
+                        </button>
+</div>
+</div>
+</div>
+<!-- Architectural Glass Detail Overlay -->
+<div class="absolute right-0 bottom-0 w-1/3 h-2/3 hidden lg:block">
+<div class="w-full h-full glass-effect bg-surface-container-lowest/30 border-l border-t border-outline-variant/10 rounded-tl-[4rem] p-12">
+<div class="flex flex-col h-full justify-between">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">balance</span>
+<h3 class="text-2xl font-bold tracking-tight text-on-surface">Structural Integrity in Global Markets</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">Navigating complex jurisdictional landscapes requires more than knowledge—it requires foresight and architectural precision.</p>
+</div>
+<div class="pt-8 border-t border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+<img data-alt="Professional headshot of a senior legal partner in a tailored navy suit with an executive office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF8EH7Z5suSTNADcaYL1ANng2wdTCFq0MQ2g2pZgKWAdedfPoExzOTwHeQITCwmTpkFZVN61RxcpuM9B67cY6Qcpm8UanTjo4ZQdTti16yaCAn2lMaoC_JjMFru-VlLhW4hL6qibz7IcCmA2cv3KM3qpyc__Y3T8DIRdpyt9s-NPtioqfhI9C51hyYe7ylW1LnDz_Ri-8x-1Jz2TI3MgU3NuSnOMMKRerTsYymWlT5s65dw-uYr1xA9npxeoMdkHW9AlDGVPja2ic"/>
+</div>
+<div>
+<div class="font-bold text-sm">Marcus Vance</div>
+<div class="text-xs text-on-surface-variant">Chief Legal Architect</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Advisory Services Bento Grid -->
+<section class="py-24 bg-surface px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-3xl font-black tracking-tighter text-on-surface uppercase mb-2">Practice Areas</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Main Card -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 flex flex-col justify-between group hover:bg-primary transition-all duration-500 rounded-xl shadow-sm">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-5xl text-primary group-hover:text-on-primary transition-colors">security</span>
+<h3 class="text-4xl font-bold tracking-tight text-on-surface group-hover:text-on-primary transition-colors">Regulatory Compliance</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 transition-colors text-lg max-w-md leading-relaxed">
+                                Future-proofing your enterprise against shifting global regulations. We build the protocols that ensure continuity across borders.
+                            </p>
+</div>
+<div class="flex items-center gap-6 mt-8">
+<ul class="space-y-2 text-sm font-medium text-on-surface group-hover:text-on-primary/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Cross-border GDPR</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Financial Conduct</li>
+</ul>
+<ul class="space-y-2 text-sm font-medium text-on-surface group-hover:text-on-primary/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> ESG Governance</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> AML/KYC Systems</li>
+</ul>
+</div>
+</div>
+<!-- Secondary Cards Column -->
+<div class="md:col-span-5 grid grid-rows-2 gap-6">
+<div class="bg-surface-container-low p-8 flex flex-col justify-between rounded-xl hover:bg-surface-container-high transition-colors">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary">warning</span>
+<span class="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-on-surface-variant">Core Practice</span>
+</div>
+<div>
+<h4 class="text-2xl font-bold mb-2">Risk Management</h4>
+<p class="text-on-surface-variant text-sm font-light">Identifying and mitigating structural vulnerabilities in corporate hierarchy and asset protection.</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-8 flex flex-col justify-between rounded-xl border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary">analytics</span>
+<span class="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-on-surface-variant">Advisory</span>
+</div>
+<div>
+<h4 class="text-2xl font-bold mb-2">Strategic Advisory</h4>
+<p class="text-on-surface-variant text-sm font-light">High-level consultation for mergers, acquisitions, and restructuring with legal precision.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Refined Metrics Section -->
+<section class="py-24 bg-surface-container-lowest border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+<div class="text-center lg:text-left">
+<div class="text-5xl md:text-6xl font-black tracking-tighter text-primary mb-2">124+</div>
+<div class="text-[0.7rem] font-bold tracking-[0.3em] uppercase text-on-surface-variant mb-4">Jurisdictions Covered</div>
+<p class="text-xs text-on-surface-variant font-medium leading-relaxed max-w-[180px] mx-auto lg:mx-0">Global legal intelligence across every major trade hub.</p>
+</div>
+<div class="text-center lg:text-left">
+<div class="text-5xl md:text-6xl font-black tracking-tighter text-primary mb-2">99.8%</div>
+<div class="text-[0.7rem] font-bold tracking-[0.3em] uppercase text-on-surface-variant mb-4">Compliance Rating</div>
+<p class="text-xs text-on-surface-variant font-medium leading-relaxed max-w-[180px] mx-auto lg:mx-0">Maintaining the highest standards of regulatory excellence.</p>
+</div>
+<div class="text-center lg:text-left">
+<div class="text-5xl md:text-6xl font-black tracking-tighter text-primary mb-2">15bn+</div>
+<div class="text-[0.7rem] font-bold tracking-[0.3em] uppercase text-on-surface-variant mb-4">Assets Protected</div>
+<p class="text-xs text-on-surface-variant font-medium leading-relaxed max-w-[180px] mx-auto lg:mx-0">Strategic legal frameworks for global capital preservation.</p>
+</div>
+<div class="text-center lg:text-left">
+<div class="text-5xl md:text-6xl font-black tracking-tighter text-primary mb-2">24/7</div>
+<div class="text-[0.7rem] font-bold tracking-[0.3em] uppercase text-on-surface-variant mb-4">Active Monitoring</div>
+<p class="text-xs text-on-surface-variant font-medium leading-relaxed max-w-[180px] mx-auto lg:mx-0">Continuous oversight of legislative shifts worldwide.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="relative rounded-2xl overflow-hidden p-12 lg:p-24 bg-primary text-on-primary">
+<div class="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-30" data-alt="Modern geometric glass office building reflecting the sky at sunset, emphasizing structural depth and premium legal security" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBtv2PetZpgXOaZHHUYbmDU55xd9Iez7uEdP9HPlyQ89UXQJEVMzPOsLcfyNrNxUz6860uTSvYHA_9hN5tED5h3iUPJwMaYb9S3juGBchppV0ta5puf1Yr2Qu_RcjYrvnfLUrxyy4ihqh3US5kGE0sRSHSyUX0q_ihQYWLIKYFeFcSvDelq5P0seJvHJ4rc5bJB4TErz36hYzgjC3kIBNPesjFJzpmj070kNxQ1aU3qWrFtKDeI2ZuRTvYINStkC5Z3FYuiQxthP0"/>
+</div>
+<div class="relative z-10 max-w-xl">
+<h2 class="text-5xl font-black tracking-tight mb-8">Ready to secure your global structure?</h2>
+<p class="text-on-primary/80 text-xl font-light mb-12">Consult with our legal architects to design a framework that protects and empowers your business growth.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-5 bg-white text-primary font-bold rounded-md hover:bg-surface-container-low transition-all">Schedule Consultation</button>
+<button class="px-10 py-5 bg-transparent border-2 border-on-primary/30 text-on-primary font-bold rounded-md hover:border-on-primary transition-all">View Case Studies</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-7xl mx-auto font-inter text-sm leading-relaxed">
+<div class="col-span-2 lg:col-span-1">
+<div class="text-lg font-black tracking-tighter text-slate-900 dark:text-slate-50 mb-6">BTV Consulting</div>
+<p class="text-slate-500 dark:text-slate-400 mb-6">Precision advisory for the world's most ambitious enterprises.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="font-bold text-slate-900 dark:text-slate-50 mb-2">Expertise</div>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="strategy.html">Strategy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="growth.html">Growth</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="tech.html">Tech</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="data.html">Data</a>
+</div>
+<div class="flex flex-col gap-3">
+<div class="font-bold text-slate-900 dark:text-slate-50 mb-2">Sectors</div>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="finance.html">Finance</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="marketing.html">Marketing</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80 text-purple-700 dark:text-purple-300 font-semibold" href="legal.html">Legal</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="talent.html">Talent</a>
+</div>
+<div class="flex flex-col gap-3">
+<div class="font-bold text-slate-900 dark:text-slate-50 mb-2">Company</div>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="index.html">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="#">Careers</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="#">Press</a>
+</div>
+<div class="flex flex-col gap-3">
+<div class="font-bold text-slate-900 dark:text-slate-50 mb-2">Legal</div>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 underline decoration-purple-500/30 underline-offset-4 transition-opacity duration-200 hover:opacity-80" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-slate-400 text-xs">
+            © 2024 BTV Consulting. All rights reserved.
+        </div>
+</footer>
+<script>
+// Mobile menu toggle
+const menuBtn = document.querySelector('button.md\\:hidden, button[class*="md:hidden"]');
+const mobileNav = document.createElement('div');
+mobileNav.id = 'mobile-menu';
+mobileNav.className = 'fixed top-[72px] left-0 w-full bg-white/95 backdrop-blur-xl z-40 hidden shadow-lg';
+mobileNav.innerHTML = `
+  <div class="flex flex-col py-6 px-6 gap-4 font-inter text-sm font-medium">
+    <a href="strategy.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Strategy</a>
+    <a href="growth.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Growth</a>
+    <a href="tech.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Tech</a>
+    <a href="data.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Data</a>
+    <a href="finance.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Finance</a>
+    <a href="marketing.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Marketing</a>
+    <a href="legal.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Legal</a>
+    <a href="talent.html" class="py-2 text-slate-700 hover:text-purple-900 border-b border-slate-100">Talent</a>
+    <a href="contact.html" class="mt-2 py-3 px-4 bg-gradient-to-br from-[#320052] to-[#4f0a7b] text-white rounded-lg font-bold text-center">Contact Us</a>
+  </div>
+`;
+document.body.appendChild(mobileNav);
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+  });
+}
+</script>
+</body></html>
